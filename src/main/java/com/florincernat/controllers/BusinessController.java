@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class BusinessController {
 	
-	@GetMapping("/greeting")
-    public String greeting() {
-        return "greeting";
-    }
+	@GetMapping("/register_customer")
+	public String greeting() {
+		return "register_customer";
+	}
 }
