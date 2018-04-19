@@ -29,3 +29,10 @@ begin
 execute immediate 'select max(id) from '||p_table into v_max_id;
 return v_max_id;
 end;
+/
+create or replace procedure insert_customer(p_email customers.email%type, p_name CUSTOMERS.FULL_NAME%type, p_password customers.password%type) as
+v_id customers.id%type;
+begin
+v_id := generate_id('customers');
+insert into customers values (v_id,p_email,p_name,p_password);
+end;
