@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.florincernat.controllers")
+@ComponentScan(basePackages = {"com.florincernat.controllers" , "com.florincernat.services"})
 public class WaitlessApplication {
 
     public static void main(String args[]) {

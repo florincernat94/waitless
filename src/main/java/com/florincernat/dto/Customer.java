@@ -2,6 +2,7 @@ package com.florincernat.dto;
 
 public class Customer {
 	private int id;
+	private String email;
 	private String fullName;
 	private String password;
 	private String passwordConfirm;
@@ -38,4 +39,11 @@ public class Customer {
 		this.passwordConfirm = passwordConfirm;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 }

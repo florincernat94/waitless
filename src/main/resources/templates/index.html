@@ -1,13 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="zxx" class="no-js" style="display: block;">
 <head>
-    <title>Welcome to Waitless</title>
-    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+	<title>Getting Started: Serving Web Content</title>
+	<!--/*/ <th:block th:include="fragments/head-commons :: head"></th:block> /*/-->
 </head>
-<body>
-<div class="container">
-    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
-    Welcome to WaitLess
-</div>
+<body style="display: block;">
+
+
+	<!--/*/ <th:block th:include="fragments/header :: body"></th:block> /*/-->
+	<section class="generic-banner relative">
+		<div class="container">
+			<div class="row height align-items-center justify-content-center">
+				<div class="col-lg-10">
+					<div class="generic-banner-content">
+						<h2 class="text-white">The Generic Page</h2>
+						<p class="text-white">It won’t be a bigger problem to find one video game lover in your <br> neighbor. Since the introduction of Virtual Game.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+	<form action="/register" method="post" name="customer">
+		<div class="form-group">
+			<label for="fullName" class="col-sm-2">Full Name:</label>
+			<input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full Name" required>
+		</div>
+		<div class="form-group">
+			<label for="email" class="col-sm-2">Email:</label>
+			<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+		</div>
+		<div class="form-group">
+			<label for="password" class="col-sm-2">Password:</label>
+			<input type="password" data-minlength="6" class="form-control" id="password" name="password" placeholder="Password" required>
+			<div class="help-block">Minimum of 6 characters</div>
+		</div>
+		<div class="form-group">
+			<label for="passwordConfirm" class="col-sm-2">Password:</label>
+			<input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" data-match="#password" data-match-error="Whoops, these don't match" placeholder="Confirm Password" required>
+			<div class="help-block with-errors"></div>
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+	<!--/*/ <th:block th:include="fragments/footer :: body"></th:block> /*/-->
+	<!-- End footer Area -->
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

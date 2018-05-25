@@ -13,6 +13,6 @@ public class HeaderController {
 	
 	@GetMapping("/register")
 	public String greeting() {
-		return "pages/register";
+		return "index";
 	}
 }
