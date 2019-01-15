@@ -1,9 +1,17 @@
 create table customers(
-id int not null unique,
+id number not null unique,
 email varchar2(100 char) not null unique,
 full_name varchar2(100 char) not null,
 password varchar2(30 char) not null
 );
+
+create table users (
+id number not null unique,
+customer_id number not null,
+email varchar2(100 char) not null unique,
+full_name varchar2(100 char) not null,
+password varchar2(30 char) not null
+)
 
 create table business(
 id int not null unique,

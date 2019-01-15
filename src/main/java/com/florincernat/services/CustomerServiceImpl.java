@@ -21,5 +21,10 @@ public class CustomerServiceImpl implements CustomerService{
 
     }
 
+    @Override
+    public void loginCustomer(String email, String password) {
+        //String databaseEmail = jdbcTemplate.queryForObject("select email from customers where email='?'",email);
+    }
+
 
 }
